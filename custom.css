@@ -1,0 +1,28 @@
+.rendered_html h1:first-child {
+    margin-top: 0px;
+}
+
+.input_prompt {
+    display: none;
+}
+
+.output_subarea {
+    padding: 0px;
+}
+
+.output_area div.output_text {
+    font-size: 80%;
+}
+
+.output_area .prompt {
+    min-width: 0px;
+    width: 0px;
+}
+
+.rendered_html h1 {
+    font-size: 150px;
+}
+
+.reveal p {
+    margin: 0px;
+}
