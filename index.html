@@ -11812,19 +11812,19 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Overview">Overview<a class="anchor-link" href="#Overview">&#182;</a></h1><ul>
-<li>Github Forks</li>
-<li>Issues and Pull Requests</li>
-<li>My github workflow</li>
-</ul>
-<ul>
-<li>Recap</li>
-<li>Ignoring Files with <code>.gitignore</code></li>
+<li>quick recap</li>
+<li>GitHub Forks</li>
+<li><p>Issues and Pull Requests</p>
+</li>
+<li><p>Ignoring Files with <code>.gitignore</code></p>
+</li>
 <li>Hosting your own repositories with <code>bare repositories</code></li>
 <li>Branches (with <code>git checkout</code>)</li>
 <li>Undoing your mistakes with <code>git reset</code> and <code>git revert</code></li>
 <li>Rewriting history with <code>git rebase</code></li>
 <li>Rewriting history, like, totally. with <code>git rebase -i</code></li>
 <li>The last resort: <code>git reflog</code></li>
+<li>My GitHub workflow</li>
 </ul>
 
 </div>
@@ -11995,7 +11995,7 @@ nothing to commit (create/copy files and use &#34;git add&#34; to track)
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Adding-and-commiting">Adding and commiting<a class="anchor-link" href="#Adding-and-commiting">&#182;</a></h1>
+<h1 id="Adding-and-committing">Adding and committing<a class="anchor-link" href="#Adding-and-committing">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -12004,7 +12004,7 @@ nothing to commit (create/copy files and use &#34;git add&#34; to track)
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;fist line in file myfile&quot;</span> &gt; myfile.txt
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;first line in file myfile&quot;</span> &gt; myfile.txt
 git status
 </pre></div>
 
@@ -12091,7 +12091,7 @@ git status
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master (root-commit) abcee8f] added a first line to my file
+<pre>[master (root-commit) 7e4d620] added a first line to my file
  1 file changed, 1 insertion(+)
  create mode 100644 myfile.txt
 On branch master
@@ -12122,9 +12122,9 @@ nothing to commit, working directory clean
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansiyellow">commit abcee8f4a29742890af4c3515ed3236af7e35894</span>
+<pre><span class="ansiyellow">commit 7e4d6208c11e3daa867eff0a9d494e90a7510a1d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:16 2016 -0400
+Date:   Tue Mar 29 11:32:47 2016 -0400
 
     added a first line to my file
 </pre>
@@ -12140,7 +12140,7 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Changing-and-commiting-again">Changing and commiting again<a class="anchor-link" href="#Changing-and-commiting-again">&#182;</a></h1>
+<h1 id="Changing-and-committing-again">Changing and committing again<a class="anchor-link" href="#Changing-and-committing-again">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -12231,17 +12231,17 @@ git log
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 4776f30] I added a second line
+<pre>[master 344a292] I added a second line
  1 file changed, 1 insertion(+)
-<span class="ansiyellow">commit 4776f306a589b86077652ca5a1943e95ec836f23</span>
+<span class="ansiyellow">commit 344a292cc5a57060e0767f31aa020a16c8b5600a</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:17 2016 -0400
+Date:   Tue Mar 29 11:32:48 2016 -0400
 
     I added a second line
 
-<span class="ansiyellow">commit abcee8f4a29742890af4c3515ed3236af7e35894</span>
+<span class="ansiyellow">commit 7e4d6208c11e3daa867eff0a9d494e90a7510a1d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:16 2016 -0400
+Date:   Tue Mar 29 11:32:47 2016 -0400
 
     added a first line to my file
 </pre>
@@ -12419,23 +12419,23 @@ git log
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 412f96f] checked out myfile from first commit
+<pre>[master 59d540c] checked out myfile from first commit
  1 file changed, 1 deletion(-)
-<span class="ansiyellow">commit 412f96fd076b024659264a79ef842aac75b33e3d</span>
+<span class="ansiyellow">commit 59d540c6d105d3d9b11ec7f0b2e662fc73c43532</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:19 2016 -0400
+Date:   Tue Mar 29 11:32:49 2016 -0400
 
     checked out myfile from first commit
 
-<span class="ansiyellow">commit 4776f306a589b86077652ca5a1943e95ec836f23</span>
+<span class="ansiyellow">commit 344a292cc5a57060e0767f31aa020a16c8b5600a</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:17 2016 -0400
+Date:   Tue Mar 29 11:32:48 2016 -0400
 
     I added a second line
 
-<span class="ansiyellow">commit abcee8f4a29742890af4c3515ed3236af7e35894</span>
+<span class="ansiyellow">commit 7e4d6208c11e3daa867eff0a9d494e90a7510a1d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:16 2016 -0400
+Date:   Tue Mar 29 11:32:47 2016 -0400
 
     added a first line to my file
 </pre>
@@ -12451,13 +12451,190 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Ignoring-things">Ignoring things<a class="anchor-link" href="#Ignoring-things">&#182;</a></h1>
+<h1 id="Comparing-files-between-versions">Comparing files between versions<a class="anchor-link" href="#Comparing-files-between-versions">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Compare all files to the previous commit (HEAD "minus" one).</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>git diff HEAD~1
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansibold">diff --git a/myfile.txt b/myfile.txt</span>
+<span class="ansibold">index d6cb53f..dad84b7 100644</span>
+<span class="ansibold">--- a/myfile.txt</span>
+<span class="ansibold">+++ b/myfile.txt</span>
+<span class="ansicyan">@@ -1,2 +1 @@</span>
+ fist line in file myfile
+<span class="ansired">-second line in myfile is not much more interesting</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Compare only <code>myfile.txt</code> to the previous commit.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>git diff HEAD~1 myfile.txt
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansibold">diff --git a/myfile.txt b/myfile.txt</span>
+<span class="ansibold">index d6cb53f..dad84b7 100644</span>
+<span class="ansibold">--- a/myfile.txt</span>
+<span class="ansibold">+++ b/myfile.txt</span>
+<span class="ansicyan">@@ -1,2 +1 @@</span>
+ fist line in file myfile
+<span class="ansired">-second line in myfile is not much more interesting</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="GitHub">GitHub<a class="anchor-link" href="#GitHub">&#182;</a></h1><p>GitHub is a way to host and share repos, but also a social network.
+GitHub makes it easy to contribute to existing repositories.</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="GitHub-Recap">GitHub Recap<a class="anchor-link" href="#GitHub-Recap">&#182;</a></h1><p>To work on a project with a project partner you:</p>
+<ul>
+<li>create a repo</li>
+<li>push your code to the repo</li>
+<li>have them <code>pull</code> from your repo</li>
+<li>add them as a "collaborator" on GitHub</li>
+<li>now they can <code>push</code> their changes</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Problems-with-the-pull-/-push-model:">Problems with the pull / push model:<a class="anchor-link" href="#Problems-with-the-pull-/-push-model:">&#182;</a></h1><ul>
+<li>Lack of transparency (you need to study the log)</li>
+<li>Need to give out write permission to collaborators</li>
+</ul>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Alternative-model:-Forks-and-Pull-requests">Alternative model: Forks and Pull requests<a class="anchor-link" href="#Alternative-model:-Forks-and-Pull-requests">&#182;</a></h2><p>To work on someone else's project you:</p>
+<ul>
+<li>Fork (make your own copy) of the project</li>
+<li>Change your project</li>
+<li>Ask then to <code>pull</code> your changes into the main project - the <strong>pull request</strong></li>
+</ul>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Exercise:">Exercise:<a class="anchor-link" href="#Exercise:">&#182;</a></h1><ul>
+<li>Fork my repository at <a href="http://github.com/amueller/repo_to_fork">http://github.com/amueller/repo_to_fork</a></li>
+<li>Clone your forked version of the project (so you have a copy on your hard disk)</li>
+<li>Create a new file, add and commit it.</li>
+<li>Push the file to your forked repository.</li>
+<li>Create a Pull Request to my original repository.</li>
+</ul>
+<p>AKA "the simplified workflow"</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Back-to-the-command-line!">Back to the command line!<a class="anchor-link" href="#Back-to-the-command-line!">&#182;</a></h1>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Ignoring-things">Ignoring things<a class="anchor-link" href="#Ignoring-things">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>touch stupidtempfile.swp
@@ -12491,9 +12668,19 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Each line in <code>.gitignore</code> specifies one (kind of) file to ignore:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;*.swp&quot;</span> &gt;&gt; .gitignore
@@ -12520,7 +12707,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>ls -a
@@ -12545,9 +12732,19 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ignored files will not show up in <code>git status</code> and will not be added when doing <code>git add -all</code></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git status
@@ -12583,13 +12780,34 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Exercise">Exercise<a class="anchor-link" href="#Exercise">&#182;</a></h1><ul>
+<li>Create a new repo</li>
+<li>Add file <code>awesome_content.txt</code> you want to commit.</li>
+<li>Add a file <code>local_notes.txt</code> that you don't want to track.</li>
+<li>do a <code>git status</code></li>
+<li>add <code>local_notes.txt</code> to <code>.gitignore</code></li>
+<li>do a <code>git status</code></li>
+<li><code>local_notes.txt</code> should not show up in the status.</li>
+<li>Add and commit <code>awesome_content.txt</code>.</li>
+<li>Try adding <code>local_notes.txt</code>.</li>
+<li>Should you add <code>.gitignore</code>?</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Making-Remotes">Making Remotes<a class="anchor-link" href="#Making-Remotes">&#182;</a></h1>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">pwd</span>
@@ -12616,7 +12834,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> ..
@@ -12643,7 +12861,7 @@ mkdir cloned_repo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> cloned_repo
@@ -12667,9 +12885,19 @@ mkdir cloned_repo
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I can clone a local directory!</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git clone ../myrepo
@@ -12697,7 +12925,7 @@ done.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>tree ..
@@ -12733,7 +12961,7 @@ done.
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> myrepo
@@ -12761,7 +12989,7 @@ ls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git remote -v
@@ -12789,7 +13017,7 @@ origin	/home/andy/advanced_git_tmp/cloned_repo/../myrepo (push)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git log
@@ -12805,21 +13033,21 @@ origin	/home/andy/advanced_git_tmp/cloned_repo/../myrepo (push)
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansiyellow">commit 412f96fd076b024659264a79ef842aac75b33e3d</span>
+<pre><span class="ansiyellow">commit 59d540c6d105d3d9b11ec7f0b2e662fc73c43532</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:19 2016 -0400
+Date:   Tue Mar 29 11:32:49 2016 -0400
 
     checked out myfile from first commit
 
-<span class="ansiyellow">commit 4776f306a589b86077652ca5a1943e95ec836f23</span>
+<span class="ansiyellow">commit 344a292cc5a57060e0767f31aa020a16c8b5600a</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:17 2016 -0400
+Date:   Tue Mar 29 11:32:48 2016 -0400
 
     I added a second line
 
-<span class="ansiyellow">commit abcee8f4a29742890af4c3515ed3236af7e35894</span>
+<span class="ansiyellow">commit 7e4d6208c11e3daa867eff0a9d494e90a7510a1d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:16 2016 -0400
+Date:   Tue Mar 29 11:32:47 2016 -0400
 
     added a first line to my file
 </pre>
@@ -12842,7 +13070,7 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> ../../myrepo
@@ -12870,7 +13098,7 @@ cat myfile.txt
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;another line commited to the original repo&quot;</span> &gt;&gt; myfile.txt
@@ -12888,7 +13116,7 @@ git commit -m <span class="s2">&quot;new commit in the original repo&quot;</span
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 501e92a] new commit in the original repo
+<pre>[master 18a3a33] new commit in the original repo
  1 file changed, 1 insertion(+)
 </pre>
 </div>
@@ -12900,7 +13128,7 @@ git commit -m <span class="s2">&quot;new commit in the original repo&quot;</span
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git log
@@ -12916,27 +13144,27 @@ git commit -m <span class="s2">&quot;new commit in the original repo&quot;</span
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansiyellow">commit 501e92a1b922eff90c512e7e925c1aab4fd72d74</span>
+<pre><span class="ansiyellow">commit 18a3a33467da956c792681a283effcd7c72d1864</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:22 2016 -0400
+Date:   Tue Mar 29 11:32:54 2016 -0400
 
     new commit in the original repo
 
-<span class="ansiyellow">commit 412f96fd076b024659264a79ef842aac75b33e3d</span>
+<span class="ansiyellow">commit 59d540c6d105d3d9b11ec7f0b2e662fc73c43532</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:19 2016 -0400
+Date:   Tue Mar 29 11:32:49 2016 -0400
 
     checked out myfile from first commit
 
-<span class="ansiyellow">commit 4776f306a589b86077652ca5a1943e95ec836f23</span>
+<span class="ansiyellow">commit 344a292cc5a57060e0767f31aa020a16c8b5600a</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:17 2016 -0400
+Date:   Tue Mar 29 11:32:48 2016 -0400
 
     I added a second line
 
-<span class="ansiyellow">commit abcee8f4a29742890af4c3515ed3236af7e35894</span>
+<span class="ansiyellow">commit 7e4d6208c11e3daa867eff0a9d494e90a7510a1d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:16 2016 -0400
+Date:   Tue Mar 29 11:32:47 2016 -0400
 
     added a first line to my file
 </pre>
@@ -12959,7 +13187,7 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> ../cloned_repo/myrepo
@@ -12985,7 +13213,7 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git pull origin
@@ -13006,8 +13234,8 @@ remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0)
 Unpacking objects: 100% (3/3), done.
 From /home/andy/advanced_git_tmp/cloned_repo/../myrepo
-   412f96f..501e92a  master     -&gt; origin/master
-Updating 412f96f..501e92a
+   59d540c..18a3a33  master     -&gt; origin/master
+Updating 59d540c..18a3a33
 Fast-forward
  myfile.txt | 1 <span class="ansigreen">+</span>
  1 file changed, 1 insertion(+)
@@ -13021,7 +13249,7 @@ Fast-forward
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git log
@@ -13037,27 +13265,27 @@ Fast-forward
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansiyellow">commit 501e92a1b922eff90c512e7e925c1aab4fd72d74</span>
+<pre><span class="ansiyellow">commit 18a3a33467da956c792681a283effcd7c72d1864</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:22 2016 -0400
+Date:   Tue Mar 29 11:32:54 2016 -0400
 
     new commit in the original repo
 
-<span class="ansiyellow">commit 412f96fd076b024659264a79ef842aac75b33e3d</span>
+<span class="ansiyellow">commit 59d540c6d105d3d9b11ec7f0b2e662fc73c43532</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:19 2016 -0400
+Date:   Tue Mar 29 11:32:49 2016 -0400
 
     checked out myfile from first commit
 
-<span class="ansiyellow">commit 4776f306a589b86077652ca5a1943e95ec836f23</span>
+<span class="ansiyellow">commit 344a292cc5a57060e0767f31aa020a16c8b5600a</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:17 2016 -0400
+Date:   Tue Mar 29 11:32:48 2016 -0400
 
     I added a second line
 
-<span class="ansiyellow">commit abcee8f4a29742890af4c3515ed3236af7e35894</span>
+<span class="ansiyellow">commit 7e4d6208c11e3daa867eff0a9d494e90a7510a1d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:16 2016 -0400
+Date:   Tue Mar 29 11:32:47 2016 -0400
 
     added a first line to my file
 </pre>
@@ -13080,7 +13308,7 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;new line in cloned repo&quot;</span> &gt;&gt; myfile.txt
@@ -13098,7 +13326,7 @@ git commit -m <span class="s2">&quot;new line in cloned repo&quot;</span>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master c0f9836] new line in cloned repo
+<pre>[master b84d28d] new line in cloned repo
  1 file changed, 1 insertion(+)
 </pre>
 </div>
@@ -13108,9 +13336,19 @@ git commit -m <span class="s2">&quot;new line in cloned repo&quot;</span>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>But I can't push to the original repo. (Someone might have edited the files but not checked them in)</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git push origin
@@ -13130,7 +13368,7 @@ git commit -m <span class="s2">&quot;new line in cloned repo&quot;</span>
 <pre>Counting objects: 3, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 319 bytes | 0 bytes/s, done.
+Writing objects: 100% (3/3), 320 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 remote: error: refusing to update checked out branch: refs/heads/master
 remote: error: By default, updating the current branch in a non-bare repository
@@ -13162,13 +13400,14 @@ error: failed to push some refs to &#39;/home/andy/advanced_git_tmp/cloned_repo/
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="bare-repositories"><code>bare</code> repositories<a class="anchor-link" href="#bare-repositories">&#182;</a></h1>
+<h1 id="bare-repositories"><code>bare</code> repositories<a class="anchor-link" href="#bare-repositories">&#182;</a></h1><p>Allow pushing to them, but not directly editing them. They are used only as remotes.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> ../..
@@ -13196,7 +13435,7 @@ ls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>mkdir bare_repo
@@ -13223,9 +13462,19 @@ git init --bare
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Bare repos don't look like the content of the repository:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>ls
@@ -13249,10 +13498,20 @@ git init --bare
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Adding the <code>bare</code> repository as a remote to the existing repository <code>myrepo</code>:</p>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> ../myrepo
@@ -13279,7 +13538,7 @@ git remote add new_bare ../bare_repo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git remote -v
@@ -13305,9 +13564,19 @@ new_bare	../bare_repo (push)
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pushing master of <code>myrepo</code> to the <code>bare_repo</code>:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git push new_bare master
@@ -13326,7 +13595,7 @@ new_bare	../bare_repo (push)
 <pre>Counting objects: 10, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (6/6), done.
-Writing objects: 100% (10/10), 909 bytes | 0 bytes/s, done.
+Writing objects: 100% (10/10), 907 bytes | 0 bytes/s, done.
 Total 10 (delta 1), reused 0 (delta 0)
 To ../bare_repo
  * [new branch]      master -&gt; master
@@ -13337,10 +13606,20 @@ To ../bare_repo
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Add <code>bare_repo</code> as a remote in the cloned repo:</p>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> ../cloned_repo/myrepo
@@ -13366,7 +13645,7 @@ To ../bare_repo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git remote add new_bare ../../bare_repo
@@ -13390,9 +13669,19 @@ To ../bare_repo
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Push the new changes we made in the clone to the bare repo:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git push new_bare master
@@ -13411,10 +13700,10 @@ To ../bare_repo
 <pre>Counting objects: 3, done.
 Delta compression using up to 4 threads.
 Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 319 bytes | 0 bytes/s, done.
+Writing objects: 100% (3/3), 320 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To ../../bare_repo
-   501e92a..c0f9836  master -&gt; master
+   18a3a33..b84d28d  master -&gt; master
 </pre>
 </div>
 </div>
@@ -13422,10 +13711,20 @@ To ../../bare_repo
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pull the changes from the clone to the original repo via the bare repo:</p>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">cd</span> ../../myrepo
@@ -13444,8 +13743,8 @@ git pull new_bare master
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>From ../bare_repo
  * branch            master     -&gt; FETCH_HEAD
-   501e92a..c0f9836  master     -&gt; new_bare/master
-Updating 501e92a..c0f9836
+   18a3a33..b84d28d  master     -&gt; new_bare/master
+Updating 18a3a33..b84d28d
 Fast-forward
  myfile.txt | 1 <span class="ansigreen">+</span>
  1 file changed, 1 insertion(+)
@@ -13459,7 +13758,7 @@ Fast-forward
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git log
@@ -13475,33 +13774,33 @@ Fast-forward
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansiyellow">commit c0f9836b75698880512fdd71d2000257dc08ee3f</span>
+<pre><span class="ansiyellow">commit b84d28dff6036a3f958752576dac5e9ea209598d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:24 2016 -0400
+Date:   Tue Mar 29 11:32:55 2016 -0400
 
     new line in cloned repo
 
-<span class="ansiyellow">commit 501e92a1b922eff90c512e7e925c1aab4fd72d74</span>
+<span class="ansiyellow">commit 18a3a33467da956c792681a283effcd7c72d1864</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:22 2016 -0400
+Date:   Tue Mar 29 11:32:54 2016 -0400
 
     new commit in the original repo
 
-<span class="ansiyellow">commit 412f96fd076b024659264a79ef842aac75b33e3d</span>
+<span class="ansiyellow">commit 59d540c6d105d3d9b11ec7f0b2e662fc73c43532</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:19 2016 -0400
+Date:   Tue Mar 29 11:32:49 2016 -0400
 
     checked out myfile from first commit
 
-<span class="ansiyellow">commit 4776f306a589b86077652ca5a1943e95ec836f23</span>
+<span class="ansiyellow">commit 344a292cc5a57060e0767f31aa020a16c8b5600a</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:17 2016 -0400
+Date:   Tue Mar 29 11:32:48 2016 -0400
 
     I added a second line
 
-<span class="ansiyellow">commit abcee8f4a29742890af4c3515ed3236af7e35894</span>
+<span class="ansiyellow">commit 7e4d6208c11e3daa867eff0a9d494e90a7510a1d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:16 2016 -0400
+Date:   Tue Mar 29 11:32:47 2016 -0400
 
     added a first line to my file
 </pre>
@@ -13517,14 +13816,48 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Bare-repos-are-like-your-own-personal-github!-(kinda)">Bare repos are like your own personal github! (kinda)<a class="anchor-link" href="#Bare-repos-are-like-your-own-personal-github!-(kinda)">&#182;</a></h2>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Exercise">Exercise<a class="anchor-link" href="#Exercise">&#182;</a></h1><ul>
+<li>Create a new bare repo and push to it form your original repository.</li>
+<li><code>clone</code> the bare repo.</li>
+<li>change the clone and push to the bare repo.</li>
+<li>Go to your original repository and pull from the bare repo.</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Undoing-your-mistakes-sneak-preview">Undoing your mistakes sneak preview<a class="anchor-link" href="#Undoing-your-mistakes-sneak-preview">&#182;</a></h1><p><img src="git_xkcd.png" alt="xkcd"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Remove all files:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>rm *
@@ -13549,9 +13882,20 @@ ls
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Get them back!</p>
+<p>From the last commit:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git reset --hard
@@ -13567,7 +13911,7 @@ ls
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>HEAD is now at c0f9836 new line in cloned repo
+<pre>HEAD is now at b84d28d new line in cloned repo
 </pre>
 </div>
 </div>
@@ -13576,9 +13920,19 @@ ls
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>From any commit or remote:</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git reset --hard new_bare/master
@@ -13594,7 +13948,7 @@ ls
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>HEAD is now at c0f9836 new line in cloned repo
+<pre>HEAD is now at b84d28d new line in cloned repo
 </pre>
 </div>
 </div>
@@ -13602,19 +13956,40 @@ ls
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The last line rescues you after screwing up your local copy.</p>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Branches">Branches<a class="anchor-link" href="#Branches">&#182;</a></h1>
+<h1 id="Branches">Branches<a class="anchor-link" href="#Branches">&#182;</a></h1><p>Allow parallel lines of development.</p>
+
+</div>
+</div>
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Create new branches with <code>git checkout -b</code></p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git checkout -b new_branch_with_descriptive_name
@@ -13641,7 +14016,7 @@ ls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;new stuff that is reeeeaaally cool and maybe even works&quot;</span> &gt; myfile.txt
@@ -13667,7 +14042,7 @@ ls
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git add myfile.txt
@@ -13684,7 +14059,7 @@ git commit -m <span class="s2">&quot;hurray, new stuff.&quot;</span>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[new_branch_with_descriptive_name 9629df1] hurray, new stuff.
+<pre>[new_branch_with_descriptive_name 3a2169a] hurray, new stuff.
  1 file changed, 1 insertion(+), 3 deletions(-)
 </pre>
 </div>
@@ -13696,7 +14071,7 @@ git commit -m <span class="s2">&quot;hurray, new stuff.&quot;</span>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git log
@@ -13712,39 +14087,39 @@ git commit -m <span class="s2">&quot;hurray, new stuff.&quot;</span>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansiyellow">commit 9629df17443c12415a829d0d443b2d3e94902d0c</span>
+<pre><span class="ansiyellow">commit 3a2169aab7f3cf48b2926b35f19e03fbf5cfe3fb</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:28 2016 -0400
+Date:   Tue Mar 29 11:32:59 2016 -0400
 
     hurray, new stuff.
 
-<span class="ansiyellow">commit c0f9836b75698880512fdd71d2000257dc08ee3f</span>
+<span class="ansiyellow">commit b84d28dff6036a3f958752576dac5e9ea209598d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:24 2016 -0400
+Date:   Tue Mar 29 11:32:55 2016 -0400
 
     new line in cloned repo
 
-<span class="ansiyellow">commit 501e92a1b922eff90c512e7e925c1aab4fd72d74</span>
+<span class="ansiyellow">commit 18a3a33467da956c792681a283effcd7c72d1864</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:22 2016 -0400
+Date:   Tue Mar 29 11:32:54 2016 -0400
 
     new commit in the original repo
 
-<span class="ansiyellow">commit 412f96fd076b024659264a79ef842aac75b33e3d</span>
+<span class="ansiyellow">commit 59d540c6d105d3d9b11ec7f0b2e662fc73c43532</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:19 2016 -0400
+Date:   Tue Mar 29 11:32:49 2016 -0400
 
     checked out myfile from first commit
 
-<span class="ansiyellow">commit 4776f306a589b86077652ca5a1943e95ec836f23</span>
+<span class="ansiyellow">commit 344a292cc5a57060e0767f31aa020a16c8b5600a</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:17 2016 -0400
+Date:   Tue Mar 29 11:32:48 2016 -0400
 
     I added a second line
 
-<span class="ansiyellow">commit abcee8f4a29742890af4c3515ed3236af7e35894</span>
+<span class="ansiyellow">commit 7e4d6208c11e3daa867eff0a9d494e90a7510a1d</span>
 Author: Andreas Mueller &lt;amueller@nyu.edu&gt;
-Date:   Mon Mar 28 19:32:16 2016 -0400
+Date:   Tue Mar 29 11:32:47 2016 -0400
 
     added a first line to my file
 </pre>
@@ -13763,10 +14138,10 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 <h1 id="Where-is-the-branch?">Where is the branch?<a class="anchor-link" href="#Where-is-the-branch?">&#182;</a></h1>
 </div>
 </div>
-</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
@@ -13782,12 +14157,12 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">, </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new line in cloned repo
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+<pre>* <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">, </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new line in cloned repo
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -13796,9 +14171,20 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>master</code> is at "new line in cloned repo", <code>new_branch_with_descriptive_name</code> is at "hurray, new stuff"</p>
+<p><code>HEAD</code> points to <code>new_branch_with_descriptive_name</code>.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">alias</span> <span class="nv">nicelog</span><span class="o">=</span><span class="s2">&quot;git log --graph --decorate --all --oneline&quot;</span>
@@ -13821,14 +14207,23 @@ Date:   Mon Mar 28 19:32:16 2016 -0400
 </div>
 </div>
 
-</div><div class="fragment">
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Move to another branch with <code>git checkout</code></p>
+
+</div>
+</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git checkout master
-cat myfile.txt
 </pre></div>
 
 </div>
@@ -13842,9 +14237,6 @@ cat myfile.txt
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Switched to branch &#39;master&#39;
-fist line in file myfile
-another line commited to the original repo
-new line in cloned repo
 </pre>
 </div>
 </div>
@@ -13855,38 +14247,7 @@ new line in cloned repo
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;add to the old stuff &quot;</span> &gt;&gt; another_file.txt
-git add another_file.txt
-git commit -m <span class="s2">&quot;working on another file on the master branch&quot;</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[master b4d3e73] working on another file on the master branch
- 1 file changed, 1 insertion(+)
- create mode 100644 another_file.txt
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
@@ -13902,14 +14263,146 @@ git commit -m <span class="s2">&quot;working on another file on the master branc
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">b4d3e73</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> working on another file on the master branch
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+<pre>* <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">, </span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>HEAD</code> points at <code>master</code>.</p>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The content of <code>myfile.txt</code> is the one at "new line in cloned repo", not "hurray, new stuff":</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>cat myfile.txt
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>fist line in file myfile
+another line commited to the original repo
+new line in cloned repo
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We add another commit to <code>master</code>:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;add to the old stuff &quot;</span> &gt;&gt; another_file.txt
+git add another_file.txt
+git commit -m <span class="s2">&quot;working on another file on the master&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[master 35e6fa4] working on another file on the master
+ 1 file changed, 1 insertion(+)
+ create mode 100644 another_file.txt
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>An now we see why it's called branch!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>* <span class="ansiyellow">35e6fa4</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> working on another file on the master
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -13920,7 +14413,7 @@ git commit -m <span class="s2">&quot;working on another file on the master branc
 </div></div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>ls
@@ -13944,10 +14437,20 @@ git commit -m <span class="s2">&quot;working on another file on the master branc
 </div>
 </div>
 
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Check out the "new_branch" again:</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git checkout new_branch_with_descriptive_name
@@ -13971,10 +14474,20 @@ git commit -m <span class="s2">&quot;working on another file on the master branc
 </div>
 </div>
 
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>another_file.txt</code> has disappeared:</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>ls
@@ -13998,19 +14511,20 @@ git commit -m <span class="s2">&quot;working on another file on the master branc
 </div>
 </div>
 
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Merging-Branches">Merging Branches<a class="anchor-link" href="#Merging-Branches">&#182;</a></h1>
+<h1 id="Merging-Branches">Merging Branches<a class="anchor-link" href="#Merging-Branches">&#182;</a></h1><p>Or reuniting the lines of development.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git checkout master
@@ -14034,10 +14548,20 @@ git commit -m <span class="s2">&quot;working on another file on the master branc
 </div>
 </div>
 
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Merge branches with <code>git merge</code>. Provide a message with <code>-m</code>.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git merge new_branch_with_descriptive_name -m <span class="s2">&quot;merge descriptive branch with cool feature&quot;</span>
@@ -14063,20 +14587,30 @@ git commit -m <span class="s2">&quot;working on another file on the master branc
 </div>
 </div>
 
-</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><code>git merge --abort</code> is your friend!</p>
+<p><code>git merge --abort</code> is your friend if there are many conflicts and you start to panic.</p>
+
+</div>
+</div>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After a successful merge, all is clean:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git status
@@ -14106,10 +14640,20 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 </div>
 
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Changes from both branches are there:</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>cat myfile.txt
@@ -14136,7 +14680,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
@@ -14152,16 +14696,16 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>*   <span class="ansiyellow">6c653a2</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> merge descriptive branch with cool feature
+<pre>*   <span class="ansiyellow">266bd72</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> merge descriptive branch with cool feature
 <span class="ansired">|</span><span class="ansigreen">\</span>  
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansigreen">|</span> <span class="ansiyellow">b4d3e73</span> working on another file on the master branch
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansigreen">|</span> <span class="ansiyellow">35e6fa4</span> working on another file on the master
 <span class="ansigreen">|</span><span class="ansigreen">/</span>  
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -14169,70 +14713,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>git checkout -b another_new_branch
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Switched to a new branch &#39;another_new_branch&#39;
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>*   <span class="ansiyellow">6c653a2</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">another_new_branch</span><span class="ansiyellow">, </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> merge descriptive branch with cool feature
-<span class="ansired">|</span><span class="ansigreen">\</span>  
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansigreen">|</span> <span class="ansiyellow">b4d3e73</span> working on another file on the master branch
-<span class="ansigreen">|</span><span class="ansigreen">/</span>  
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -14244,7 +14725,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git checkout -b branch_started_further_back HEAD~3
@@ -14271,7 +14752,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
@@ -14287,16 +14768,16 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>*   <span class="ansiyellow">6c653a2</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">, </span><span class="ansigreen ansibold">another_new_branch</span><span class="ansiyellow">)</span> merge descriptive branch with cool feature
+<pre>*   <span class="ansiyellow">266bd72</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> merge descriptive branch with cool feature
 <span class="ansired">|</span><span class="ansigreen">\</span>  
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansigreen">|</span> <span class="ansiyellow">b4d3e73</span> working on another file on the master branch
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansigreen">|</span> <span class="ansiyellow">35e6fa4</span> working on another file on the master
 <span class="ansigreen">|</span><span class="ansigreen">/</span>  
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-* <span class="ansiyellow">501e92a</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+* <span class="ansiyellow">18a3a33</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -14316,7 +14797,107 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>git checkout -b another_new_branch
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Switched to a new branch &#39;another_new_branch&#39;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>*   <span class="ansiyellow">266bd72</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> merge descriptive branch with cool feature
+<span class="ansired">|</span><span class="ansigreen">\</span>  
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansigreen">|</span> <span class="ansiyellow">35e6fa4</span> working on another file on the master
+<span class="ansigreen">|</span><span class="ansigreen">/</span>  
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+* <span class="ansiyellow">18a3a33</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">another_new_branch</span><span class="ansiyellow">, </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We can't delete the branch we're on so we go back to master:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>git checkout master
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Already on &#39;master&#39;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git branch -D another_new_branch
@@ -14332,7 +14913,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Deleted branch another_new_branch (was 6c653a2).
+<pre>Deleted branch another_new_branch (was 18a3a33).
 </pre>
 </div>
 </div>
@@ -14340,7 +14921,7 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 </div>
 
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -14384,11 +14965,11 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git checkout master
-nicelog
+git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -14401,17 +14982,17 @@ nicelog
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Switched to branch &#39;master&#39;
-*   <span class="ansiyellow">6c653a2</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> merge descriptive branch with cool feature
+<pre>Already on &#39;master&#39;
+*   <span class="ansiyellow">266bd72</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> merge descriptive branch with cool feature
 <span class="ansired">|</span><span class="ansigreen">\</span>  
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansigreen">|</span> <span class="ansiyellow">b4d3e73</span> working on another file on the master branch
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansigreen">|</span> <span class="ansiyellow">35e6fa4</span> working on another file on the master
 <span class="ansigreen">|</span><span class="ansigreen">/</span>  
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-* <span class="ansiyellow">501e92a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+* <span class="ansiyellow">18a3a33</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -14422,7 +15003,7 @@ nicelog
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>ls
@@ -14449,7 +15030,7 @@ nicelog
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git revert HEAD~1 --no-edit
@@ -14465,7 +15046,7 @@ nicelog
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master 2a384af] Revert &#34;working on another file on the master branch&#34;
+<pre>[master 64c8100] Revert &#34;working on another file on the master&#34;
  1 file changed, 1 deletion(-)
  delete mode 100644 another_file.txt
 </pre>
@@ -14478,10 +15059,10 @@ nicelog
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -14494,17 +15075,17 @@ nicelog
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">2a384af</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> Revert &#34;working on another file on the master branch&#34;
-*   <span class="ansiyellow">6c653a2</span> merge descriptive branch with cool feature
+<pre>* <span class="ansiyellow">64c8100</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> Revert &#34;working on another file on the master&#34;
+*   <span class="ansiyellow">266bd72</span> merge descriptive branch with cool feature
 <span class="ansigreen">|</span><span class="ansiyellow">\</span>  
-<span class="ansigreen">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansiyellow">|</span> <span class="ansiyellow">b4d3e73</span> working on another file on the master branch
+<span class="ansigreen">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansiyellow">|</span> <span class="ansiyellow">35e6fa4</span> working on another file on the master
 <span class="ansiyellow">|</span><span class="ansiyellow">/</span>  
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-* <span class="ansiyellow">501e92a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+* <span class="ansiyellow">18a3a33</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -14515,7 +15096,7 @@ nicelog
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>ls
@@ -14556,7 +15137,7 @@ nicelog
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git reset branch_started_further_back
@@ -14584,10 +15165,10 @@ M	myfile.txt
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -14600,12 +15181,12 @@ M	myfile.txt
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-* <span class="ansiyellow">501e92a</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">, </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+<pre>* <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+* <span class="ansiyellow">18a3a33</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">, </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -14616,7 +15197,7 @@ M	myfile.txt
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git status
@@ -14655,7 +15236,7 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>cat myfile.txt
@@ -14682,7 +15263,7 @@ no changes added to commit (use &#34;git add&#34; and/or &#34;git commit -a&#34;
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git add myfile.txt
@@ -14699,7 +15280,7 @@ git commit -m <span class="s2">&quot;new stuff from the feature branch that I di
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[master f3a80c3] new stuff from the feature branch that I did stuff with
+<pre>[master 00cf774] new stuff from the feature branch that I did stuff with
  1 file changed, 1 insertion(+), 2 deletions(-)
 </pre>
 </div>
@@ -14711,10 +15292,10 @@ git commit -m <span class="s2">&quot;new stuff from the feature branch that I di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[92]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -14727,14 +15308,14 @@ git commit -m <span class="s2">&quot;new stuff from the feature branch that I di
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-<span class="ansired">|</span> * <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<pre>* <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+<span class="ansired">|</span> * <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">501e92a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -14755,7 +15336,7 @@ git commit -m <span class="s2">&quot;new stuff from the feature branch that I di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[93]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git checkout -b branch_well_move_back
@@ -14782,10 +15363,10 @@ git commit -m <span class="s2">&quot;new stuff from the feature branch that I di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[94]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -14798,14 +15379,14 @@ git commit -m <span class="s2">&quot;new stuff from the feature branch that I di
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">, </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-<span class="ansired">|</span> * <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<pre>* <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">, </span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+<span class="ansired">|</span> * <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">501e92a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -14816,7 +15397,7 @@ git commit -m <span class="s2">&quot;new stuff from the feature branch that I di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git reset --hard HEAD~3
@@ -14832,7 +15413,7 @@ git commit -m <span class="s2">&quot;new stuff from the feature branch that I di
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>HEAD is now at 4776f30 I added a second line
+<pre>HEAD is now at 344a292 I added a second line
 </pre>
 </div>
 </div>
@@ -14843,7 +15424,7 @@ git commit -m <span class="s2">&quot;new stuff from the feature branch that I di
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git status
@@ -14876,10 +15457,10 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[97]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -14892,14 +15473,14 @@ nothing added to commit but untracked files present (use &#34;git add&#34; to tr
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-<span class="ansired">|</span> * <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<pre>* <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+<span class="ansired">|</span> * <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">501e92a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -14958,10 +15539,10 @@ git rebase basebranch</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[98]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -14974,14 +15555,14 @@ git rebase basebranch</code></pre>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-<span class="ansired">|</span> * <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<pre>* <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+<span class="ansired">|</span> * <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">501e92a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -14992,7 +15573,7 @@ git rebase basebranch</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[91]:</div>
+<div class="prompt input_prompt">In&nbsp;[99]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git checkout branch_started_further_back
@@ -15019,7 +15600,7 @@ git rebase basebranch</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Change in back branch&quot;</span> &gt; new_file_in_back_branch.txt
@@ -15041,10 +15622,10 @@ git commit -m <span class="s2">&quot;second commit in the branch_started_further
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[branch_started_further_back 337d640] added a file in the branch_started_further_back
+<pre>[branch_started_further_back 50d5233] added a file in the branch_started_further_back
  1 file changed, 1 insertion(+)
  create mode 100644 new_file_in_back_branch.txt
-[branch_started_further_back 9f711cc] second commit in the branch_started_further_back
+[branch_started_further_back 12be701] second commit in the branch_started_further_back
  1 file changed, 1 insertion(+)
 </pre>
 </div>
@@ -15056,10 +15637,10 @@ git commit -m <span class="s2">&quot;second commit in the branch_started_further
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[101]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -15072,17 +15653,17 @@ git commit -m <span class="s2">&quot;second commit in the branch_started_further
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">9f711cc</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
-* <span class="ansiyellow">337d640</span> added a file in the branch_started_further_back
-<span class="ansired">|</span> * <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+<pre>* <span class="ansiyellow">12be701</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
+* <span class="ansiyellow">50d5233</span> added a file in the branch_started_further_back
+<span class="ansired">|</span> * <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
 <span class="ansired">|</span><span class="ansired">/</span>  
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-<span class="ansired">|</span> * <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+<span class="ansired">|</span> * <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -15093,7 +15674,7 @@ git commit -m <span class="s2">&quot;second commit in the branch_started_further
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[102]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git rebase master
@@ -15122,10 +15703,10 @@ Applying: second commit in the branch_started_further_back
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[103]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -15138,16 +15719,16 @@ Applying: second commit in the branch_started_further_back
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">1c6cc0e</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
-* <span class="ansiyellow">5edb5f5</span> added a file in the branch_started_further_back
-* <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-<span class="ansired">|</span> * <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<pre>* <span class="ansiyellow">59d2f69</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
+* <span class="ansiyellow">0258c9e</span> added a file in the branch_started_further_back
+* <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+<span class="ansired">|</span> * <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -15176,10 +15757,10 @@ For the <code>--onto</code> verion, you can specify 3 separately.</p>
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[104]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -15192,16 +15773,16 @@ For the <code>--onto</code> verion, you can specify 3 separately.</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">1c6cc0e</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
-* <span class="ansiyellow">5edb5f5</span> added a file in the branch_started_further_back
-* <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
-<span class="ansired">|</span> * <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-<span class="ansired">|</span> * <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<pre>* <span class="ansiyellow">59d2f69</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
+* <span class="ansiyellow">0258c9e</span> added a file in the branch_started_further_back
+* <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+<span class="ansired">|</span> * <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+<span class="ansired">|</span> * <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -15212,7 +15793,7 @@ For the <code>--onto</code> verion, you can specify 3 separately.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[105]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git rebase master --onto new_branch_with_descriptive_name
@@ -15241,10 +15822,10 @@ Applying: second commit in the branch_started_further_back
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[106]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -15257,16 +15838,16 @@ Applying: second commit in the branch_started_further_back
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">324d624</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
-* <span class="ansiyellow">ac7186b</span> added a file in the branch_started_further_back
-* <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-<span class="ansired">|</span> * <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+<pre>* <span class="ansiyellow">157de4a</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
+* <span class="ansiyellow">08211a4</span> added a file in the branch_started_further_back
+* <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<span class="ansired">|</span> * <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -15289,7 +15870,7 @@ Needs to be done on the command line!</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1"># git rebase -i new_branch_with_descriptive_name</span>
@@ -15316,10 +15897,10 @@ Needs to be done on the command line!</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -15332,15 +15913,15 @@ Needs to be done on the command line!</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">27729a4</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> Add all changes to the file I added in back_branch
-* <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-<span class="ansired">|</span> * <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+<pre>* <span class="ansiyellow">4ec5822</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> all the changes I ever wanted!
+* <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<span class="ansired">|</span> * <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -15361,7 +15942,7 @@ Needs to be done on the command line!</p>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git reflog -n 10
@@ -15377,16 +15958,16 @@ Needs to be done on the command line!</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansiyellow">324d624</span> HEAD@{0}: checkout: moving from branch_started_further_back to before_interactive_rebase
-<span class="ansiyellow">27729a4</span> HEAD@{1}: rebase -i (finish): returning to refs/heads/branch_started_further_back
-<span class="ansiyellow">27729a4</span> HEAD@{2}: rebase -i (squash): Add all changes to the file I added in back_branch
-<span class="ansiyellow">ac7186b</span> HEAD@{3}: rebase -i (start): checkout new_branch_with_descriptive_name
-<span class="ansiyellow">324d624</span> HEAD@{4}: rebase finished: returning to refs/heads/branch_started_further_back
-<span class="ansiyellow">324d624</span> HEAD@{5}: rebase: second commit in the branch_started_further_back
-<span class="ansiyellow">ac7186b</span> HEAD@{6}: rebase: added a file in the branch_started_further_back
-<span class="ansiyellow">9629df1</span> HEAD@{7}: rebase: checkout new_branch_with_descriptive_name
-<span class="ansiyellow">1c6cc0e</span> HEAD@{8}: rebase finished: returning to refs/heads/branch_started_further_back
-<span class="ansiyellow">1c6cc0e</span> HEAD@{9}: rebase: second commit in the branch_started_further_back
+<pre><span class="ansiyellow">4ec5822</span> HEAD@{0}: rebase -i (finish): returning to refs/heads/branch_started_further_back
+<span class="ansiyellow">4ec5822</span> HEAD@{1}: rebase -i (squash): all the changes I ever wanted!
+<span class="ansiyellow">08211a4</span> HEAD@{2}: rebase -i (start): checkout new_branch_with_descriptive_name
+<span class="ansiyellow">157de4a</span> HEAD@{3}: rebase finished: returning to refs/heads/branch_started_further_back
+<span class="ansiyellow">157de4a</span> HEAD@{4}: rebase: second commit in the branch_started_further_back
+<span class="ansiyellow">08211a4</span> HEAD@{5}: rebase: added a file in the branch_started_further_back
+<span class="ansiyellow">3a2169a</span> HEAD@{6}: rebase: checkout new_branch_with_descriptive_name
+<span class="ansiyellow">59d2f69</span> HEAD@{7}: rebase finished: returning to refs/heads/branch_started_further_back
+<span class="ansiyellow">59d2f69</span> HEAD@{8}: rebase: second commit in the branch_started_further_back
+<span class="ansiyellow">0258c9e</span> HEAD@{9}: rebase: added a file in the branch_started_further_back
 </pre>
 </div>
 </div>
@@ -15397,7 +15978,7 @@ Needs to be done on the command line!</p>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[102]:</div>
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>git checkout -b before_interactive_rebase HEAD@<span class="o">{</span>3<span class="o">}</span>
@@ -15424,10 +16005,10 @@ Needs to be done on the command line!</p>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[103]:</div>
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>nicelog
+<div class=" highlight hl-bash"><pre><span></span>git log --graph --decorate --all --oneline
 </pre></div>
 
 </div>
@@ -15440,18 +16021,18 @@ Needs to be done on the command line!</p>
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>* <span class="ansiyellow">27729a4</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> Add all changes to the file I added in back_branch
-<span class="ansired">|</span> * <span class="ansiyellow">324d624</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">before_interactive_rebase</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
-<span class="ansired">|</span> * <span class="ansiyellow">ac7186b</span> added a file in the branch_started_further_back
+<pre>* <span class="ansiyellow">4ec5822</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_started_further_back</span><span class="ansiyellow">)</span> all the changes I ever wanted!
+<span class="ansired">|</span> * <span class="ansiyellow">157de4a</span><span class="ansiyellow"> (</span><span class="ansicyan ansibold">HEAD</span><span class="ansiyellow"> -&gt; </span><span class="ansigreen ansibold">before_interactive_rebase</span><span class="ansiyellow">)</span> second commit in the branch_started_further_back
+<span class="ansired">|</span> * <span class="ansiyellow">08211a4</span> added a file in the branch_started_further_back
 <span class="ansired">|</span><span class="ansired">/</span>  
-* <span class="ansiyellow">9629df1</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
-* <span class="ansiyellow">c0f9836</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
-<span class="ansigreen">|</span> * <span class="ansiyellow">f3a80c3</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
+* <span class="ansiyellow">3a2169a</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">new_branch_with_descriptive_name</span><span class="ansiyellow">)</span> hurray, new stuff.
+* <span class="ansiyellow">b84d28d</span><span class="ansiyellow"> (</span><span class="ansired ansibold">new_bare/master</span><span class="ansiyellow">)</span> new line in cloned repo
+<span class="ansigreen">|</span> * <span class="ansiyellow">00cf774</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">master</span><span class="ansiyellow">)</span> new stuff from the feature branch that I did stuff with
 <span class="ansigreen">|</span><span class="ansigreen">/</span>  
-* <span class="ansiyellow">501e92a</span> new commit in the original repo
-* <span class="ansiyellow">412f96f</span> checked out myfile from first commit
-* <span class="ansiyellow">4776f30</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
-* <span class="ansiyellow">abcee8f</span> added a first line to my file
+* <span class="ansiyellow">18a3a33</span> new commit in the original repo
+* <span class="ansiyellow">59d540c</span> checked out myfile from first commit
+* <span class="ansiyellow">344a292</span><span class="ansiyellow"> (</span><span class="ansigreen ansibold">branch_well_move_back</span><span class="ansiyellow">)</span> I added a second line
+* <span class="ansiyellow">7e4d620</span> added a first line to my file
 </pre>
 </div>
 </div>
@@ -15459,20 +16040,64 @@ Needs to be done on the command line!</p>
 </div>
 </div>
 
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>
-</pre></div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Rebasing-requires-force-push!!">Rebasing requires force-push!!<a class="anchor-link" href="#Rebasing-requires-force-push!!">&#182;</a></h1>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="The-Real-GitHub-Workflow">The Real GitHub Workflow<a class="anchor-link" href="#The-Real-GitHub-Workflow">&#182;</a></h1><p>(to make the project maintainer love you)</p>
+<ul>
+<li>Fork and clone the repository (you did that already)</li>
+<li>Create a <strong>feature branch</strong> that contains your changes.</li>
+<li>Work on your changes.</li>
+<li>Push to your repository.</li>
+<li>Create a pull request.</li>
+</ul>
+<p>Do it!</p>
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
 </div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="While-you-where-away">While you where away<a class="anchor-link" href="#While-you-where-away">&#182;</a></h1><ul>
+<li>Oh no! While you were working, someone added a <em>conflicting change</em> - your pull request can't be merged!</li>
+<li>You need to resolve the conflict!</li>
+<li>Syncing with the original (aka upstream) repo:
+  add <code>git@github.com:amueller/repo_to_fork.git</code> as a remote to your cloned repo
+  check out local master. Pull upstream master. This is why you don't want to change master. Ever!</li>
+<li>Rebase your branch on top of master. Oh no, the conflict!</li>
+<li>Resolve the conflict.</li>
+<li>Look at your log. Damn lies! (but pretty)</li>
+<li>Push to your remote. (You have to force it)</li>
+<li>Your PR can now be merged!</li>
+</ul>
 
-</div></div></section></section>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="The-end(?)">The end(?)<a class="anchor-link" href="#The-end(?)">&#182;</a></h1>
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
